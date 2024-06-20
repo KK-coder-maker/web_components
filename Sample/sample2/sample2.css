@@ -1,0 +1,131 @@
+/* ページ全体の設定 */
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+body {
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* ヘッダー */
+/* 全体の設定 */
+header {
+    width: 100%;
+}
+
+/* トップバーの設定 */
+#top-bar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    height: 50px;
+}
+
+#top-bar .logo a{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#top-bar .user-links a {
+    text-decoration: none;
+    margin-left: 2em;
+    font-size: 0.8rem;
+}
+
+/* ドロップダウンメニューの設定 */
+#dropdown-bar {
+    position: relative;
+    height: 50px;
+    border-top: 1px solid #030202;
+}
+li a {
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #000000;
+    background: #ffffff;
+    border-bottom: 1px solid #030202;
+}
+.contents-bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    
+}
+.contents-bar li {
+    list-style: none;
+    
+}
+.contents-bar > li > a {
+    float: left;
+    background-color: #ffffff;
+    
+}
+.contents-bar li a:hover {
+    background: #cbcbcb;
+    
+}
+.dropdown {
+    position: relative;
+}
+.dropdown ul {
+    width: 20%;
+    position: absolute;
+    padding: 0;
+    top:35px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+}
+.dropdown ul a{
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #030202;
+    background-color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.dropdown:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown:hover ul a {
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-content1 {
+    left: 0;
+}
+.dropdown-content2 {
+    left: 20%;
+}
+.dropdown-content3 {
+    left: 40%;
+}
+.dropdown-content4 {
+    left: 60%;
+}
+.dropdown-content5 {
+    left: 80%;
+}
