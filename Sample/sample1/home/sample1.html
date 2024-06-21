@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample1</title>
-    <link rel="stylesheet" href="../../ress.css">
+    <link rel="stylesheet" href="../../../ress.css">
     <link rel="stylesheet" href="sample1.css">
     <script defer src="sample1.js"></script>
 </head>
@@ -86,5 +86,15 @@
 
     <!-- フッター -->
     
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.dropdown').on('click', function(){
+    $(this).toggleClass('open');
+    $(this).find('ul').slideToggle(500);
+  });
+});
+</script>
+
 </body>
 </html>
