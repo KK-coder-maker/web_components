@@ -6,7 +6,7 @@
     <title>Sample1</title>
     <link rel="stylesheet" href="../../../ress.css">
     <link rel="stylesheet" href="sample1.css">
-    <script defer src="sample1.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -88,8 +88,8 @@
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(function(){
-  $('.dropdown').on('click', function(){
+    $(function(){
+    $('.dropdown').on('click', function(){
     $(this).toggleClass('open');
     $(this).find('ul').slideToggle(500);
   });
